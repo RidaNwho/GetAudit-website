@@ -46,3 +46,10 @@ class GetAudit {
 document.addEventListener('DOMContentLoaded', () => {
     window.getAudit = new GetAudit();
 });
+function unlockAdmin() {
+  const password = prompt("Enter admin password:");
+  if (password === "BentlyAuditPicy2010!1985?") {
+    sessionStorage.setItem('getaudit_admin', "true");
+    window.location.href = 'admin.html';
+  }
+}
