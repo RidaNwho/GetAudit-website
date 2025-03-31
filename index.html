@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetAudit | MM2 Value Auditor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <!-- Header/Navigation (same as before) -->
+    
+    <main>
+        <!-- Item display (same as before) -->
+    </main>
+
+    <!-- Cart Modal (same as before) -->
+
+    <!-- Auth Modal (new embedded version) -->
+    <div class="auth-modal" id="auth-modal">
+        <div class="auth-content">
+            <span class="close-auth">&times;</span>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="register">Register</button>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="login-form" class="auth-form active">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="auth-btn">Login</button>
+                <div id="login-error" class="auth-error"></div>
+            </form>
+            
+            <!-- Registration Form with reCAPTCHA -->
+            <form id="register-form" class="auth-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Roblox Username" required>
+                    <small>Your exact Roblox username (not display name)</small>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password (min 6 chars)" minlength="6" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                <button type="submit" class="auth-btn">Create Account</button>
+                <div id="register-error" class="auth-error"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Receipt Modal (same as before) -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
