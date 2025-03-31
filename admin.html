@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin | GetAudit</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+        .stat-card { background: var(--dark-grey); padding: 1rem; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <header><!-- Same as index.html --></header>
+    
+    <main class="admin-container">
+        <h1>Admin Dashboard</h1>
+        <div class="admin-stats" id="admin-stats"></div>
+        <div id="security-log"></div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
 // In admin.js (new file)
 document.addEventListener('DOMContentLoaded', () => {
   const admin = sessionStorage.getItem('getaudit_admin');
