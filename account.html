@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Account | GetAudit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><!-- Same as index.html --></header>
+    
+    <main class="account-container">
+        <h1>Your Audit History</h1>
+        <div id="user-audits"><!-- Filled by JavaScript --></div>
+        <button id="logout">Log Out</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
 // In script.js
 function checkAuth() {
   const user = sessionStorage.getItem('getaudit_user');
