@@ -23,6 +23,6 @@ Professional Murder Mystery 2 item valuation and secure trading platform.
 
 ## Setup
 ```bash
-git clone https://github.com/yourusername/getaudit.git
+git clone https://github.com/RidaNwho/getaudit.git
 cd getaudit
 # Open index.html
